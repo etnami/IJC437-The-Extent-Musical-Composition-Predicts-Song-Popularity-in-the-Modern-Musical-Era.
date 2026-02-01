@@ -548,6 +548,25 @@ chi_square_explicit <- chisq.test(testing_significance)
 
 print(chi_square_explicit)
 
+contingency_table <- table(dataset_range$explicit, dataset_range$is_pop)
+print(contingency_table)
+
+prop_table <- prop.table(contingency_table, margin = 1) 
+round(prop_table * 100, 2)
+
+#making a table summary for my report
+contingency_summary <- dataset_range %>%
+  group_by(explicit) %>%
+  summarise(
+    Total = n(),
+    Popular = sum(is_pop == TRUE),
+    Not_Popular = sum(is_pop == FALSE)
+  ) %>%
+  mutate(Hit_Rate = percent(Popular / Total))
+
+knitr::kable(contingency_summary, 
+             caption = "Contingency Table: Song Explicitness vs. Popularity")
+
 #p-value 0.006 - this relationship is significant
 
 #artist type and popularity- a variable i did not explore but could be of note in future research if shows significance
