@@ -1,2 +1,2 @@
-# IJC437-The-Extent-Musical-Composition-Predicts-a-Song-a-Popularity-in-The-Modern-Musical-Era.
+# IJC437-The-Extent-Musical-Composition-Predicts-Song-Popularity-in-the-Modern-Musical-Era.
 [Abstract here]
