@@ -1,1 +1,36 @@
-[ libraries and packages here ]
+#A comprehensive list of packages and libraries needed to run this code.
+
+#Packages:
+install.packages("tidyverse")
+install.packages("car")
+install.packages("DescTools")
+install.packages("pROC")
+install.packages("gtsummary")
+install.packages("MASS")
+install.packages("caret")
+install.packages("randomForest")
+install.packages("ggcorrplot")
+install.packages("kableExtra")
+install.packages("flextable")
+install.packages("broom")
+install.packages("sjPlot")
+install.packages("knitr")
+
+#Libraries:
+library(tidyverse)
+library(officer)
+library(flextable)
+library(knitr)
+library(kableExtra)
+library(ggcorrplot)
+library(viridisLite)
+library(scales)
+library(MASS)
+library(caret)
+library(DescTools)
+library(pROC)
+library(car)
+library(caret)
+library(randomForest)
+library(patchwork)
+library(broom)
